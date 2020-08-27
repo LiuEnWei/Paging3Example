@@ -1,9 +1,13 @@
 # Paging3Example
 
-Use
+- Use
 
-Koin
-Retrofit/OkHttp
-RxJava/RxAndroid
-Glide
-Paging v3
+  Koin
+
+  Retrofit/OkHttp
+
+  RxJava/RxAndroid
+
+  Glide
+
+  Paging v3
