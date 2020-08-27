@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Paging3Example</string>
     <string name="oops">Oops</string>
+    <string name="user_list">User List</string>
+    <string name="staff">Staff</string>
+    <string name="reload">Reload</string>
 </resources>
