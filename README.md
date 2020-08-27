@@ -1,13 +1,13 @@
 # Paging3Example
 
-- Use
++ MVVM architecture
 
-  Koin
++ RxJava/RxAndroid
 
-  Retrofit/OkHttp
++ Retrofit + OkHttp
 
-  RxJava/RxAndroid
++ Paging v3
 
-  Glide
++ Glide
 
-  Paging v3
++ Dependency injection - Koin
