@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Paging3Example</string>
+    <string name="oops">Oops</string>
 </resources>
