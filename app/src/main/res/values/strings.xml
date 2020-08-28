@@ -4,4 +4,6 @@
     <string name="user_list">User List</string>
     <string name="staff">Staff</string>
     <string name="reload">Reload</string>
+    <string name="user_detail">User Detail</string>
+    <string name="not_provided">Not provided</string>
 </resources>

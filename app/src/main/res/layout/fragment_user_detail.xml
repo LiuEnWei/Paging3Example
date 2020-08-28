@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="@dimen/size_95"
+            android:layout_height="@dimen/size_95"
+            android:layout_marginTop="@dimen/size_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/shapeCircle" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_15"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/colorGray600"
+            android:layout_marginStart="@dimen/size_24"
+            android:layout_marginEnd="@dimen/size_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgAvatar"/>
+
+        <TextView
+            android:id="@+id/textBio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/colorGray600"
+            android:layout_marginStart="@dimen/size_24"
+            android:layout_marginEnd="@dimen/size_24"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textName"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_category"
+            android:layout_marginTop="@dimen/size_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textBio"/>
+
+        <ImageView
+            android:id="@+id/imgPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_marginStart="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line"/>
+
+        <TextView
+            android:id="@+id/textLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_24"
+            android:layout_marginStart="@dimen/size_48"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/colorGray800"
+            app:layout_constraintStart_toEndOf="@id/imgPerson"
+            app:layout_constraintTop_toTopOf="@id/imgPerson"
+            app:layout_constraintBottom_toTopOf="@id/textStaff"
+            tools:text="Github"/>
+
+        <TextView
+            android:id="@+id/textStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/colorWhite"
+            android:text="@string/staff"
+            android:background="@drawable/bg_staff"
+            android:paddingStart="@dimen/size_10"
+            android:paddingEnd="@dimen/size_10"
+            android:paddingTop="@dimen/size_1"
+            android:paddingBottom="@dimen/size_1"
+            app:layout_constraintStart_toStartOf="@id/textLogin"
+            app:layout_constraintTop_toBottomOf="@id/textLogin"
+            app:layout_constraintBottom_toBottomOf="@id/imgPerson"/>
+
+        <ImageView
+            android:id="@+id/imgLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_location_on_24"
+            android:layout_marginStart="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgPerson"/>
+
+        <TextView
+            android:id="@+id/textLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_24"
+            android:layout_marginStart="@dimen/size_48"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/colorGray800"
+            app:layout_constraintStart_toEndOf="@id/imgLocation"
+            app:layout_constraintTop_toTopOf="@id/imgLocation"
+            app:layout_constraintBottom_toBottomOf="@id/imgLocation"
+            tools:text="Taipei"/>
+
+        <ImageView
+            android:id="@+id/imgLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_link_24"
+            android:layout_marginStart="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_48"
+            android:layout_marginBottom="@dimen/size_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgLocation"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/textBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_24"
+            android:layout_marginStart="@dimen/size_48"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/colorGray800"
+            app:layout_constraintStart_toEndOf="@id/imgLink"
+            app:layout_constraintTop_toTopOf="@id/imgLink"
+            app:layout_constraintBottom_toBottomOf="@id/imgLink"
+            tools:text="https://www.google.com"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -9,5 +9,20 @@
         android:label="@string/user_list"
         android:name="com.wayne.paging3example.ui.userlist.UserListFragment"
         tools:layout="@layout/fragment_user_list">
+
+        <action
+            android:id="@+id/action_userListFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:label="@string/user_detail"
+        android:name="com.wayne.paging3example.ui.userdetail.UserDetailFragment"
+        tools:layout="@layout/fragment_user_detail">
+        <argument
+            android:name="user"
+            app:nullable="false"
+            app:argType="com.wayne.paging3example.model.vo.User"/>
     </fragment>
 </navigation>

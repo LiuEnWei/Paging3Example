@@ -6,6 +6,7 @@ import android.view.View
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.paging.CombinedLoadStates
 import androidx.paging.LoadState
 import com.wayne.paging3example.R
@@ -51,7 +52,7 @@ class UserListFragment: BaseFragment(R.layout.fragment_user_list), OnUserClickLi
     }
 
     override fun onClick(user: User) {
-
+        findNavController().navigate(UserListFragmentDirections.actionUserListFragmentToUserDetailFragment(user))
     }
 
     override fun invoke(states: CombinedLoadStates) {
